@@ -10,6 +10,8 @@ h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: -15px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 2.5rem;
     color: #4c4f69;
 }
@@ -119,4 +121,32 @@ a:hover {
 .roadmap .content:before {
     position: absolute;
     color: #1e66f5;
+}
+
+@media (max-width: 800px) {
+    .launchpad-count {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .launchpad-count-content {
+        margin: 10px auto;
+        width: 10rem;
+    }
+}
+
+@media (max-width: 460px) {
+    h3 {
+        font-size: 1.35rem;
+    }
+
+    .launchpad-count {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .launchpad-count-content {
+        margin: 10px auto;
+        width: 10rem;
+    }
 }
