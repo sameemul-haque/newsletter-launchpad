@@ -1,7 +1,122 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #121212;
+    font-family: "Poppins", sans-serif;
+    background-color: #dce0e8;
+    color: #232634;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -15px;
+    font-size: 2.5rem;
+    color: #4c4f69;
+}
+
+section {
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #8839ef;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #8839ef;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #1e66f5;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: #e6e9ef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1e66f5;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #1e66f5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+a:hover {
+    background: #8839ef;
+}
+
+
+.launchpad-count {
+    display: flex;
+    justify-content: space-around;
+}
+
+.launchpad-count-content {
+    background: #04a5e5;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.launchpad-count-content:hover {
+    animation: beatingHeart 1.5s infinite;
+}
+
+@keyframes beatingHeart {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.05);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.05);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+}
+
+
+.roadmap {
+    padding-left: 20px;
+}
+
+.roadmap .content {
+    position: relative;
+    padding-left: 20px;
+}
+
+.roadmap .content:before {
+    position: absolute;
+    color: #1e66f5;
 }
